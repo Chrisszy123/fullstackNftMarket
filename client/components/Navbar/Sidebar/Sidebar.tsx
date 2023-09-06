@@ -1,6 +1,8 @@
 import React from 'react'
-
-const Sidebar = () => {
+interface SidebarProps{
+  setOpenSideMenu: any
+}
+const Sidebar = ({setOpenSideMenu}: SidebarProps) => {
   return (
     <div>Sidebar</div>
   )

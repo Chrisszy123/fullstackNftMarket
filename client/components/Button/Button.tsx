@@ -1,6 +1,9 @@
 import React from 'react'
 
-const Button = () => {
+interface Buttonprops {
+  btnText: string
+}
+const Button = ({btnText}: Buttonprops) => {
   return (
     <div>Button</div>
   )
