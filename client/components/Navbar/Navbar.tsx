@@ -91,10 +91,10 @@ const NavBar = () => {
         {/* end of left section */}
         <div className={style.navbar_container_right}>
           {/* Discover menu */}
-          <div className={style.navbar_container_right_dicover}>
+          <div className={style.navbar_container_right_discover}>
             <p onClick={(e) => openMenu(e)}>Discover</p>
             {discover && (
-              <div className={style.navbar_container_right_dicover_box}>
+              <div className={style.navbar_container_right_discover_box}>
                 <Discover />
               </div>
             )}
@@ -118,7 +118,7 @@ const NavBar = () => {
           </div>
           {/* create button section  */}
           <div className={style.navbar_container_right_button}>
-            <Button btnText="Create" />
+            <Button btnText="Create" handleClick={() => {}}/>
           </div>
           {/* user profile */}
           <div className={style.navbar_container_right_profile_box}>
@@ -145,7 +145,7 @@ const NavBar = () => {
       </div>
       {/* side bar component */}
       {openSideMenu && (
-        <div className={style.SideBar}>
+        <div className={style.sidebar}>
           <Sidebar setOpenSideMenu={setOpenSideMenu}/> 
         </div>
       )}

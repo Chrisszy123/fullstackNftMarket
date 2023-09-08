@@ -159,8 +159,8 @@ const Sidebar = ({ setOpenSideMenu }: SidebarProps) => {
         </div>
       </div>
       <div className={style.sideBar_button}>
-        <Button btnText="Create"/>
-        <Button btnText="Connect Wallet"/>
+        <Button btnText="Create" handleClick={() => {}}/>
+        <Button btnText="Connect Wallet" handleClick={() => {}}/>
       </div>
     </div>
   );

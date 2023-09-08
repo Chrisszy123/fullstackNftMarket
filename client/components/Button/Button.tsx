@@ -1,11 +1,17 @@
 import React from 'react'
-
+//internal
+import style from './Button.module.css'
 interface Buttonprops {
-  btnText: string
+  btnText: string;
+  handleClick: any
 }
-const Button = ({btnText}: Buttonprops) => {
+const Button = ({btnText, handleClick}: Buttonprops) => {
   return (
-    <div>Button</div>
+    <div className={style.box}>
+      <button className={style.button} onClick={() => handleClick()}>
+        {btnText}
+      </button>
+    </div>
   )
 }
 
