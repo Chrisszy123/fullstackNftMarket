@@ -3,7 +3,7 @@ import React from 'react'
 import style from './Button.module.css'
 interface Buttonprops {
   btnText: string;
-  handleClick: any
+  handleClick?: any
 }
 const Button = ({btnText, handleClick}: Buttonprops) => {
   return (
